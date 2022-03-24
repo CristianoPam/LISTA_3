@@ -1,42 +1,44 @@
 Algoritmo "Triagulo"
-//Disciplina:[Linguagem e LÛgica de ProgramaÁ„o]
+//Disciplina:[Linguagem e L√≥gica de Programa√ß√£o]
 //Professor: Edilene Aparecida Veneruchi de Campos
-//DescriÁ„o: 01
+//Descri√ß√£o: 01
 //Autor: Cristiano Perira Alves de Morais
 //Data:13/03/2022
-//equil·tero quando possui os trÍs lados com as mesmas medidas
-// isÛsceles, os ‚ngulos da base s„o sempre iguais (tratamos como base o lado que possui medida diferente dos demais lados
-//escaleno quando as medidas dos lados s„o todas diferentes
+//equil√°tero quando possui os tr√™s lados com as mesmas medidas
+// is√≥sceles, os √¢ngulos da base s√£o sempre iguais (tratamos como base o lado que possui medida diferente dos demais lados
+//escaleno quando as medidas dos lados s√£o todas diferentes
 Var
 valor1,valor2,valor3:inteiro
 
 Inicio
 
-Escreva ("Qual È o primeiro valor? ")
+Escreva ("Qual √© o primeiro valor? ")
 leia (valor1)
-Escreva ("Qual È o segundo valor? ")
+Escreva ("Qual √© o segundo valor? ")
 leia (valor2)
-Escreva ("Qual È o terceiro valor? ")
+Escreva ("Qual √© o terceiro valor? ")
 leia (valor3)
 
 
 
-se (valor1>(valor2+valor3)) ou (valor2>(valor3+valor1)) ou (valor3>(valor2+valor1))entao
-                    escreva (" N„o È um Tri‚ngulo")
+se (valor1 < valor2 + valor3) e (valor2 < valor1 + valor3) e (valor3 < valor1 + valor1) entao
+   escreval("Formou um triangulo")
 
-    senao
+
 se (valor1=valor2) e (valor2=valor3)  entao
-                   escreva ("… um Tri‚ngulo Equil·tero.")
+                   escreval ("√â um Tri√¢ngulo Equil√°tero.")
 
-    senao
+
  ou
 se (valor1<>valor2) e (valor2<>valor3) e (valor1<>valor3)  entao
-                    escreva ("… um Tri‚ngulo Escaleno.")
+                    escreval ("√â um Tri√¢ngulo Escaleno.")
 
-    senao
+
  ou
 se (valor1<>valor2) e (valor2=valor3) ou (valor2<>valor3) e (valor3=valor1) ou(valor3<>valor1) e (valor1=valor2) entao
-                    escreva ("… um Tri‚ngulo IsÛsceles.")
+                    escreval ("√â um Tri√¢ngulo Is√≥sceles.")
+     senao
+          escreval("As medidas n√£o formam um triangulo")
 fimse
 fimse
 fimse
